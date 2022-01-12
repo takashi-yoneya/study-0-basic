@@ -2,22 +2,23 @@
 
 ## 変数
 def study1():
-    name1="ぎゆう"
-    name2="ねずこ"
-    name3="ぜんいつ"
+    name1="ねずこ"
+    name2="ぜんいつ"
 
     print(name1 + "と" + name2 + "は仲間です")
+
 
 ## if文
 def study2():
     # 条件分岐
-    name1="ぎゆう"
-    name2="むざん"
-
-    if name1=="ぎゆう" and name2=="ねずこ":
+    name1 = "ぎゆう"
+    name2 = "むざん"
+ 
+    if name1 == "ぎゆう" and name2 == "ねずこ":
         print(name1 + "と" + name2 + "は仲間です")
     else:
-        print(name1 + "と" + name2 + "は仲間ではありません")
+        print(f"{name1}と{name2}は仲間ではありません")
+
 
 ## for 文
 def search_name(name,search_word):
@@ -26,15 +27,17 @@ def search_name(name,search_word):
         if search_word == n:
             print(search_word + "はいます")
     
+    
 ## 配列(List)
 def get_list():
-    name=["たんじろう","ぎゆう","ねずこ","むざん"]
+    name = ["たんじろう", "ぎゆう", "ねずこ", "むざん"]
     print(name)
     
     name.append("ぜんいつ")
-    
     print(name)
+    
     return name
+
 
 ## 実用的な関数
 def study5():
@@ -42,5 +45,6 @@ def study5():
     name_list=get_list()
     #引数
     search_name(name_list,search_word)
+    
 
 study5()
